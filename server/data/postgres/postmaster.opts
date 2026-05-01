@@ -1,0 +1,1 @@
+C:/Program Files/PostgreSQL/17/bin/postgres.exe "-D" "D:/Project/Whatsapp/server/data/postgres" "-p" "5433"

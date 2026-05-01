@@ -1,0 +1,8 @@
+[variables]
+NIXPACKS_NODE_VERSION = "22.12.0"
+
+[phases.install]
+cmds = ["npm ci --include=dev"]
+
+[phases.build]
+cmds = ["npm run build"]

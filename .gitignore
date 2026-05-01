@@ -1,0 +1,12 @@
+node_modules/
+.env
+dist/
+build/
+.DS_Store
+*.log
+.claude
+# Explicitly protect both env files
+server/.env
+client/.env
+client/.env.*
+*.mp4

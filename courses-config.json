@@ -1,0 +1,102 @@
+{
+  "courses": [
+    {
+      "id": "full-stack-java",
+      "name": "✨ Full Stack Java Development",
+      "emoji": "☕",
+      "duration": "8 Weeks",
+      "price": "₹5,999",
+      "description": "Master full-stack Java development with Spring Boot, REST APIs, and modern web technologies. Perfect for beginners and intermediate developers.",
+      "startDate": "Next batch starting soon",
+      "modules": [
+        "Java Fundamentals & OOP",
+        "Spring Boot Framework",
+        "REST APIs & Microservices",
+        "Database Design & SQL",
+        "Frontend Integration (React)",
+        "Deployment & DevOps",
+        "Real-world Project",
+        "Interview Preparation"
+      ],
+      "highlights": [
+        "✓ Industry-ready training",
+        "✓ Hands-on projects",
+        "✓ Lifetime access to materials",
+        "✓ Job assistance",
+        "✓ Certificate of completion"
+      ],
+      "contact": "Contact us for enrollment: +91 97632 50689",
+      "order": 1
+    },
+    {
+      "id": "data-science",
+      "name": "📊 Data Science & AI",
+      "emoji": "🤖",
+      "duration": "10 Weeks",
+      "price": "₹7,999",
+      "description": "Learn Data Science, Machine Learning, and AI from scratch. Build real-world projects and prepare for data science interviews.",
+      "startDate": "Next batch starting soon",
+      "modules": [
+        "Python for Data Science",
+        "Statistics & Probability",
+        "Data Wrangling & Cleaning",
+        "EDA (Exploratory Data Analysis)",
+        "Machine Learning Algorithms",
+        "Deep Learning & Neural Networks",
+        "Real-world Projects",
+        "Interview Preparation"
+      ],
+      "highlights": [
+        "✓ Industry-ready training",
+        "✓ Hands-on ML projects",
+        "✓ Lifetime access to materials",
+        "✓ Job assistance",
+        "✓ Certificate of completion"
+      ],
+      "contact": "Contact us for enrollment: +91 97632 50689",
+      "order": 2
+    },
+    {
+      "id": "web-development",
+      "name": "🌐 Full Stack Web Development",
+      "emoji": "💻",
+      "duration": "12 Weeks",
+      "price": "₹6,999",
+      "description": "Build modern web applications with React, Node.js, and MongoDB. Learn the complete MERN stack.",
+      "startDate": "Next batch starting soon",
+      "modules": [
+        "HTML, CSS & JavaScript Fundamentals",
+        "React.js & Component Architecture",
+        "Node.js & Express Framework",
+        "MongoDB Database Design",
+        "REST APIs & Authentication",
+        "Deployment & Hosting",
+        "Real-world E-commerce Project",
+        "Interview Preparation"
+      ],
+      "highlights": [
+        "✓ Industry-ready training",
+        "✓ MERN Stack expertise",
+        "✓ Lifetime access to materials",
+        "✓ Job assistance",
+        "✓ Certificate of completion"
+      ],
+      "contact": "Contact us for enrollment: +91 97632 50689",
+      "order": 3
+    }
+  ],
+  "settings": {
+    "businessName": "Finlec Technologies",
+    "businessPhone": "+91 97632 50689",
+    "businessEmail": "launchpaddindia@gmail.com",
+    "businessWebsite": "finlectechnologies.com",
+    "greeting": "Welcome to Finlec Technologies! We offer industry-leading courses to help you become job-ready.",
+    "autoReplyEnabled": true,
+    "businessHours": {
+      "enabled": false,
+      "startTime": "09:00",
+      "endTime": "18:00",
+      "timezone": "IST"
+    }
+  }
+}
