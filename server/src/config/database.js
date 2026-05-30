@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { Client } = require('pg');
 const { Sequelize } = require('sequelize');
+const { resolveDatabaseEnv } = require('./databaseEnv');
 require('dotenv').config();
 
 const rawDatabaseUrl =
@@ -35,11 +36,12 @@ function parseDatabaseUrl(urlValue) {
 }
 
 const databaseUrlConfig = parseDatabaseUrl(databaseUrl);
-const dbPort = Number(process.env.DB_PORT || databaseUrlConfig.port || defaultPort);
-const dbPassword = process.env.DB_PASS ?? process.env.PGPASSWORD ?? databaseUrlConfig.password ?? '';
-const dbName = process.env.DB_NAME || databaseUrlConfig.database;
-const dbUser = process.env.DB_USER || databaseUrlConfig.username;
-const dbHost = process.env.DB_HOST || databaseUrlConfig.host;
+const databaseEnv = resolveDatabaseEnv(process.env, databaseUrlConfig, defaultPort);
+const dbPort = databaseEnv.port;
+const dbPassword = databaseEnv.password;
+const dbName = databaseEnv.name;
+const dbUser = databaseEnv.user;
+const dbHost = databaseEnv.host;
 const pool = { max: 10, min: 0, acquire: 30000, idle: 10000 };
 
 function getDialectOptions() {
@@ -127,7 +129,7 @@ async function ensureDatabase() {
   } catch (error) {
     error.message =
       `Failed to prepare PostgreSQL database "${targetDatabase}". ` +
-      'Check DB_HOST, DB_PORT, DB_USER, DB_PASS, and DB_ADMIN_DB. ' +
+      'Check DB_HOST, DB_PORT, DB_USER, DB_PASS or DB_PASSWORD, and DB_ADMIN_DB. ' +
       error.message;
     throw error;
   } finally {
